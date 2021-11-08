@@ -1,0 +1,94 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+/*SECTION PRODUCTOS*/
+
+.sectionProductos{
+    background-color: $fondo-sections;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.822), rgba(255, 255, 255, 0.541));
+    .galeria{
+        color: $color-texto;
+        &__titulo{
+            @include mobile{
+                text-align: center;
+            }
+            @include tablet{
+                text-align: center;
+            }
+            @include laptop{
+                padding-left: 5rem;
+            }
+            @include laptop-grande{
+                padding-left: 5rem;
+            }
+            @include tv{
+                font-size: 4rem;
+                padding-left: 10rem;
+            }
+        }
+        &__productos{
+            height: 80vh;
+            @include mini{
+                flex-flow: column !important;
+                height: 200vh;
+            }
+            @include mobile{
+                flex-flow: column !important;
+                height: 200vh;
+            }
+            @include tablet{
+                flex-flow: column !important;
+                height: 210vh;
+            }
+            &__fotos{
+                height: 350px;
+                width: 350px;
+                display: block;
+                transition: all 0.4s ease-out;
+                border-radius: 10rem;
+                @include mini{
+                    height: 240px;
+                    width: 240px;
+                    border-radius: 20rem;
+                }
+                @include mobile{
+                    height: 240px;
+                    width: 240px;
+                    border-radius: 20rem;
+                }
+                @include tablet{
+                    height: 280px;
+                    width: 280px;
+                    border-radius: 20rem;
+                }
+                @include laptop{
+                    height: 280px;
+                    width: 280px;
+                    border-radius: 20rem;
+                }
+                @include tv{
+                    height: 600px;
+                    width: 600px;
+                    border-radius: 20rem;
+                }
+            }
+            &__fotos:hover{
+                transform: scale(1.3);
+                border-radius: 1rem;
+                @include laptop-grande{
+                    border-radius: 2rem;
+                }
+                @include tv{
+                    border-radius: 10rem;
+                }
+            }
+        }
+    }
+}

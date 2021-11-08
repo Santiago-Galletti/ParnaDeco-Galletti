@@ -1,0 +1,63 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+/*SECTION NOSOTROS*/
+
+.sectionNosotros{
+    background-color: $fondo-sections;
+    background-image: linear-gradient(270deg, rgba(128, 128, 128, 0.822), rgba(255, 255, 255, 0.541));
+    .nosotrosParnaFoto{
+        height: 400px;
+        width: 550px;
+        border-radius: 5rem;
+        @include mini{
+            height: 170px;
+            width: 450px;
+        }
+        @include mobile{
+            height: 250px;
+            width: 450px;
+        }
+        @include tablet{
+            height: 350px;
+            width: 500px;
+        }
+        @include laptop{
+            height: 300px;
+            width: 400px;
+        }
+        @include tv{
+            height: 600px;
+            width: 800px;
+        }
+    }
+    .nosotrosParnaTexto{
+        color: $color-texto;
+        font-size: 1.5rem;
+        text-align: center;
+        height: 50vh;
+        box-shadow: $sombra-cajas;
+        @include mini{
+            font-size: 1rem;
+        }
+        @include mobile{
+            font-size: 1rem;
+        }
+        @include tablet{
+            font-size: 1.3rem;
+        }
+        @include laptop{
+            font-size: 1rem;
+        }
+        @include tv{
+            font-size: 2.5rem;
+        }
+    }
+}

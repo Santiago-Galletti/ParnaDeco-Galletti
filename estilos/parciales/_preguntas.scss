@@ -1,0 +1,43 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+/*SECTION PREGUNTASS FRECUENTES*/
+
+.sectionPreguntas{
+    background-color: $fondo-sections;
+    color: $color-texto;
+    background-image: linear-gradient(140deg, rgba(128, 128, 128, 0.822), rgba(255, 255, 255, 0.541));
+    .box{
+        height: 35vh;
+        background-color: rgba(128, 128, 128, 0.822);
+        box-shadow: $sombra-cajas;
+        @include mini{
+            font-size: 0.8rem;
+        }
+        @include mobile{
+            font-size: 0.8rem;
+        }
+        @include tv{
+            font-size: 2rem;
+        }
+        &__pregunta{
+            @include mini{
+                font-size: 1.2rem;
+            }
+            @include mobile{
+                font-size: 1.4rem;
+            }
+            @include tv{
+                font-size: 4rem;
+            }
+        }
+        
+    }
+}

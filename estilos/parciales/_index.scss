@@ -1,0 +1,113 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+/*INDEX*/
+
+.fotosPortada{
+    position: relative;
+    .carousel-inner{
+        max-height: 39rem;
+    }
+    .portada{
+        position: absolute;
+        bottom: 13rem;
+        left: 13rem;
+        padding: 2.5rem 1rem 2.5rem 3rem;
+        width: 45vw;
+        color: $color-texto;
+        background-color: $fondo-sections;
+        box-shadow: $sombra-cajas;
+        @include mini{
+            bottom: 2.5rem;
+            left: 2rem;
+            width: 80vw;
+            padding: 0.5rem;
+        }
+        @include mobile{
+            bottom: 2rem;
+            left: 3.5rem;
+            width: 75vw;
+        }
+        @include tablet{
+            bottom: 6rem;
+            left: 8rem;
+            width: 60vw;
+        }
+        h1{
+            font-size: 3.5rem;
+            @include mini{
+                font-size: 1.5rem;
+            }
+            @include mobile{
+                font-size: 2.5rem;
+            }
+        }
+        h2{
+            font-size: 2rem;
+            @include mini{
+                font-size: 1rem;
+            }
+            @include mobile{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+.sectionIndex{
+    background-color: $fondo-sections;
+    background-image: linear-gradient(rgba(128, 128, 128, 0.822), rgba(255, 255, 255, 0.541));
+    .productos{
+        padding: 5rem 0rem;
+        @include mini{
+            padding: 3rem 0rem;
+            height: 80vh;
+        }
+        @include mobile{
+            height: 90vh;
+        }
+        @include tablet{
+            height: 110vh;
+        }
+        @include laptop{
+            height: 110vh;
+        }
+        @include laptop-grande{
+            height: 100vh;
+        }
+        @include tv{
+            height: 60vh;
+        }
+        img{
+            display: block;
+            transition: all 0.2s ease-out;
+        }
+        img:hover{
+            transform: scale(1.1);
+        }
+        &__foto{
+            height: 20rem;
+            width: 20rem;
+            box-shadow: $sombra-cajas;
+            @include mini{
+                height: 15rem;
+                width: 15rem;
+            }
+            @include mobile{
+                height: 15rem;
+                width: 15rem;
+            }
+        }
+        &__titulo{
+            font-size: 1.8;
+            color: $color-texto;
+        }
+    }
+}

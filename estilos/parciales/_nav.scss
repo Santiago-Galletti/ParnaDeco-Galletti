@@ -1,0 +1,36 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+/*NAV*/
+
+.nav{
+    background-color: $fondo-nav-footer;
+    @include tv{
+        font-size: 2rem;
+    }
+    li:hover{
+        font-weight: 500;
+    }
+    .logo{
+        width: 12rem;
+        height: 12rem;
+    }
+    .submenu{
+        background-color: $fondo-nav-footer;
+        color: black;
+        @include tv{
+            font-size: 2rem;
+        }
+        &__item:hover{
+            background-color: rgba(202, 199, 199, 0.822);
+            font-weight: 500;
+        }
+    }
+}

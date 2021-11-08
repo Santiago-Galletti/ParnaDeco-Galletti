@@ -1,0 +1,75 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+/*SECTION CONTACTO*/
+
+.sectionContacto{
+    background-color: $fondo-sections;
+    background-image: linear-gradient(180deg, rgba(128, 128, 128, 0.822), rgba(255, 255, 255, 0.541));
+    color: $color-texto;
+    .redes{
+        height: 50vh;
+        @include tv{
+            height: 40vh;
+        }
+        &__logos{
+            width: 35%;
+            @include mini{
+                width: 100%;
+            }
+            @include mobile{
+                width: 65%;
+            }
+            @include tablet{
+                width: 45%;
+            }
+        }
+        &__logos i{
+            padding: 1rem 2rem;
+            border-radius: 5rem;
+            font-size: 6rem;
+            color: $color-texto;
+            transition: all 0.4s ease-in-out;
+            @include mini{
+                font-size: 4rem;
+                padding: 0.5rem 1.2rem;
+            }
+            @include mobile{
+                font-size: 4rem;
+                padding: 0.5rem 1.2rem;
+            }
+            @include tablet{
+                font-size: 4.5rem;
+                padding: 0.5rem 1.5rem;
+            }
+            @include laptop{
+                font-size: 5rem;
+            }
+            @include tv{
+                font-size: 10rem;
+            }
+        }
+        &__logos i:hover{
+            background-color: black;
+        }
+    }
+    .formulario{
+        background-color: $fondo-sections;
+        color: $color-texto;
+        @include tv{
+            font-size: 3rem;
+        }
+        h2{
+            @include mini{
+                font-size: 1.4rem;
+            }
+        }
+    }
+}

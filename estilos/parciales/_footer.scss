@@ -1,0 +1,42 @@
+
+*{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+	border: none;
+	outline: none;
+}
+
+/*FOOTER*/
+
+.footer{
+    background-color: $fondo-nav-footer;
+    @include tv{
+        font-size: 2rem;
+    }
+    @include mini{
+        justify-content: center !important;
+        font-size: 0.7rem !important;
+    }
+    @include mobile{
+        justify-content: center !important;
+    }
+    &__logo{
+        width: 7rem;
+        height: 7rem;
+        @include tv{
+            width: 15rem;
+            height: 15rem;
+        }
+    }
+    &__iconos i{
+        color: black;
+        font-size: 2rem;
+        padding: 0 1rem;
+        @include tv{
+            font-size: 5rem;
+            margin-right: 2rem;
+        }
+    }
+}
