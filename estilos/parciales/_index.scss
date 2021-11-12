@@ -40,6 +40,9 @@
             left: 8rem;
             width: 60vw;
         }
+        @include laptop{
+            bottom: 11rem;
+        }
         h1{
             font-size: 3.5rem;
             @include mini{
@@ -68,19 +71,19 @@
         padding: 5rem 0rem;
         @include mini{
             padding: 3rem 0rem;
-            height: 80vh;
+            height: 48vh;
         }
         @include mobile{
-            height: 90vh;
+            height: 55vh;
         }
         @include tablet{
-            height: 110vh;
+            height: 70vh;
         }
         @include laptop{
-            height: 110vh;
+            height: 70vh;
         }
         @include laptop-grande{
-            height: 100vh;
+            height: 65vh;
         }
         @include tv{
             height: 60vh;
@@ -103,6 +106,10 @@
             @include mobile{
                 height: 15rem;
                 width: 15rem;
+            }
+            @include laptop-grande{
+                height: 17rem;
+                width: 17rem;
             }
         }
         &__titulo{

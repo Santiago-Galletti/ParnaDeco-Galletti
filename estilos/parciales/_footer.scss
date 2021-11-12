@@ -13,7 +13,7 @@
 .footer{
     background-color: $fondo-nav-footer;
     @include tv{
-        font-size: 2rem;
+        font-size: 1.4rem;
     }
     @include mini{
         justify-content: center !important;
@@ -26,8 +26,8 @@
         width: 7rem;
         height: 7rem;
         @include tv{
-            width: 15rem;
-            height: 15rem;
+            width: 10rem;
+            height: 10rem;
         }
     }
     &__iconos i{
@@ -35,8 +35,8 @@
         font-size: 2rem;
         padding: 0 1rem;
         @include tv{
-            font-size: 5rem;
-            margin-right: 2rem;
+            font-size: 3rem;
+            margin-right: 3rem;
         }
     }
 }

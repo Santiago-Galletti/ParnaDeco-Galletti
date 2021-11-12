@@ -14,7 +14,7 @@
 
 @media screen and (min-width: 1600px) and (max-width: 2560px) {
   .nav {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 }
 
@@ -34,7 +34,7 @@
 
 @media screen and (min-width: 1600px) and (max-width: 2560px) {
   .nav .submenu {
-    font-size: 2rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -59,7 +59,7 @@
 
 @media screen and (min-width: 1600px) and (max-width: 2560px) {
   .footer {
-    font-size: 2rem;
+    font-size: 1.4rem;
   }
 }
 
@@ -87,8 +87,8 @@
 
 @media screen and (min-width: 1600px) and (max-width: 2560px) {
   .footer__logo {
-    width: 15rem;
-    height: 15rem;
+    width: 10rem;
+    height: 10rem;
   }
 }
 
@@ -100,8 +100,8 @@
 
 @media screen and (min-width: 1600px) and (max-width: 2560px) {
   .footer__iconos i {
-    font-size: 5rem;
-    margin-right: 2rem;
+    font-size: 3rem;
+    margin-right: 3rem;
   }
 }
 
@@ -160,6 +160,12 @@
   }
 }
 
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  .fotosPortada .portada {
+    bottom: 11rem;
+  }
+}
+
 .fotosPortada .portada h1 {
   font-size: 3.5rem;
 }
@@ -205,31 +211,31 @@
 @media screen and (max-width: 320px) {
   .sectionIndex .productos {
     padding: 3rem 0rem;
-    height: 80vh;
+    height: 48vh;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 576px) {
   .sectionIndex .productos {
-    height: 90vh;
+    height: 55vh;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .sectionIndex .productos {
-    height: 110vh;
+    height: 70vh;
   }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1024px) {
   .sectionIndex .productos {
-    height: 110vh;
+    height: 70vh;
   }
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1440px) {
   .sectionIndex .productos {
-    height: 100vh;
+    height: 65vh;
   }
 }
 
@@ -268,6 +274,13 @@
   .sectionIndex .productos__foto {
     height: 15rem;
     width: 15rem;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1440px) {
+  .sectionIndex .productos__foto {
+    height: 17rem;
+    width: 17rem;
   }
 }
 
