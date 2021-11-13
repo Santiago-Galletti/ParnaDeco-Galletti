@@ -15,19 +15,35 @@
     background-image: linear-gradient(180deg, rgba(128, 128, 128, 0.822), rgba(255, 255, 255, 0.541));
     color: $color-texto;
     .redes{
-        height: 50vh;
-        @include tv{
-            height: 40vh;
+        height: 40vh;
+        @include mini{
+            text-align: center;
+            height: 30vh;
+        }
+        @include mobile{
+            height: 30vh
+        }
+        @include tablet{
+            height: 35vh;
+        }
+        @include laptop{
+            height: 35vh;
+        }
+        @include laptop-grande{
+            height: 35vh;
         }
         &__logos{
             width: 35%;
             @include mini{
-                width: 100%;
+                width: 110%;
             }
             @include mobile{
-                width: 65%;
+                width: 90%;
             }
             @include tablet{
+                width: 55%;
+            }
+            @include laptop{
                 width: 45%;
             }
         }
@@ -39,21 +55,25 @@
             transition: all 0.4s ease-in-out;
             @include mini{
                 font-size: 4rem;
-                padding: 0.5rem 1.2rem;
+                border-radius: 4rem;
             }
             @include mobile{
-                font-size: 4rem;
-                padding: 0.5rem 1.2rem;
+                font-size: 5rem;
+                border-radius: 4rem;
             }
             @include tablet{
-                font-size: 4.5rem;
-                padding: 0.5rem 1.5rem;
+                font-size: 6rem;
+                border-radius: 4rem;
             }
             @include laptop{
-                font-size: 5rem;
+                font-size: 6rem;
+                border-radius: 4rem;
+            }
+            @include laptop-grande{
+                border-radius: 4rem;
             }
             @include tv{
-                font-size: 10rem;
+                font-size: 8rem;
             }
         }
         &__logos i:hover{
@@ -64,12 +84,22 @@
         background-color: $fondo-sections;
         color: $color-texto;
         @include tv{
-            font-size: 3rem;
+            font-size: 1rem;
         }
         h2{
             @include mini{
                 font-size: 1.4rem;
             }
+        }
+        .boton{
+            padding: 0.5rem 1rem;
+            margin: 1rem 0.5rem;
+            border-radius: 2rem;
+        }
+        .boton:hover{
+            background-color: black;
+            color: $color-texto;
+            box-shadow: $sombra-cajas;
         }
     }
 }

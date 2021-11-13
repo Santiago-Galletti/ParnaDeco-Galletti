@@ -309,15 +309,24 @@
   color: white;
 }
 
+@media screen and (max-width: 320px) {
+  .sectionProductos .galeria__titulo {
+    text-align: center;
+    font-size: 1.3rem;
+  }
+}
+
 @media screen and (min-width: 375px) and (max-width: 576px) {
   .sectionProductos .galeria__titulo {
     text-align: center;
+    font-size: 1.5rem;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .sectionProductos .galeria__titulo {
     text-align: center;
+    font-size: 2.5rem;
   }
 }
 
@@ -335,7 +344,7 @@
 
 @media screen and (min-width: 1600px) and (max-width: 2560px) {
   .sectionProductos .galeria__titulo {
-    font-size: 4rem;
+    font-size: 3rem;
     padding-left: 10rem;
   }
 }
@@ -350,7 +359,7 @@
     -webkit-box-direction: normal !important;
         -ms-flex-flow: column !important;
             flex-flow: column !important;
-    height: 200vh;
+    height: 120vh;
   }
 }
 
@@ -360,7 +369,7 @@
     -webkit-box-direction: normal !important;
         -ms-flex-flow: column !important;
             flex-flow: column !important;
-    height: 200vh;
+    height: 130vh;
   }
 }
 
@@ -370,7 +379,25 @@
     -webkit-box-direction: normal !important;
         -ms-flex-flow: column !important;
             flex-flow: column !important;
-    height: 210vh;
+    height: 170vh;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  .sectionProductos .galeria__productos {
+    height: 45vh;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1440px) {
+  .sectionProductos .galeria__productos {
+    height: 60vh;
+  }
+}
+
+@media screen and (min-width: 1600px) and (max-width: 2560px) {
+  .sectionProductos .galeria__productos {
+    height: 70vh;
   }
 }
 
@@ -385,40 +412,40 @@
 
 @media screen and (max-width: 320px) {
   .sectionProductos .galeria__productos__fotos {
-    height: 240px;
-    width: 240px;
+    height: 220px;
+    width: 220px;
     border-radius: 20rem;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 576px) {
   .sectionProductos .galeria__productos__fotos {
-    height: 240px;
-    width: 240px;
+    height: 260px;
+    width: 260px;
     border-radius: 20rem;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .sectionProductos .galeria__productos__fotos {
-    height: 280px;
-    width: 280px;
+    height: 350px;
+    width: 350px;
     border-radius: 20rem;
   }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1024px) {
   .sectionProductos .galeria__productos__fotos {
-    height: 280px;
-    width: 280px;
+    height: 230px;
+    width: 230px;
     border-radius: 20rem;
   }
 }
 
 @media screen and (min-width: 1600px) and (max-width: 2560px) {
   .sectionProductos .galeria__productos__fotos {
-    height: 600px;
-    width: 600px;
+    height: 500px;
+    width: 500px;
     border-radius: 20rem;
   }
 }
@@ -429,15 +456,39 @@
   border-radius: 1rem;
 }
 
+@media screen and (max-width: 320px) {
+  .sectionProductos .galeria__productos__fotos:hover {
+    border-radius: 3rem;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+  .sectionProductos .galeria__productos__fotos:hover {
+    border-radius: 3rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .sectionProductos .galeria__productos__fotos:hover {
+    border-radius: 3rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  .sectionProductos .galeria__productos__fotos:hover {
+    border-radius: 3rem;
+  }
+}
+
 @media screen and (min-width: 1100px) and (max-width: 1440px) {
   .sectionProductos .galeria__productos__fotos:hover {
-    border-radius: 2rem;
+    border-radius: 4rem;
   }
 }
 
 @media screen and (min-width: 1600px) and (max-width: 2560px) {
   .sectionProductos .galeria__productos__fotos:hover {
-    border-radius: 10rem;
+    border-radius: 7rem;
   }
 }
 
@@ -466,7 +517,8 @@
 @media screen and (max-width: 320px) {
   .sectionNosotros .nosotrosParnaFoto {
     height: 170px;
-    width: 450px;
+    width: 550px;
+    border-radius: 3rem;
   }
 }
 
@@ -493,8 +545,8 @@
 
 @media screen and (min-width: 1600px) and (max-width: 2560px) {
   .sectionNosotros .nosotrosParnaFoto {
-    height: 600px;
-    width: 800px;
+    height: 550px;
+    width: 750px;
   }
 }
 
@@ -502,38 +554,42 @@
   color: white;
   font-size: 1.5rem;
   text-align: center;
-  height: 50vh;
+  height: 40vh;
   -webkit-box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
 }
 
 @media screen and (max-width: 320px) {
   .sectionNosotros .nosotrosParnaTexto {
-    font-size: 1rem;
+    height: 30vh;
+    font-size: 0.9rem;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 576px) {
   .sectionNosotros .nosotrosParnaTexto {
     font-size: 1rem;
+    height: 30vh;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .sectionNosotros .nosotrosParnaTexto {
     font-size: 1.3rem;
+    height: 30vh;
   }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1024px) {
   .sectionNosotros .nosotrosParnaTexto {
     font-size: 1rem;
+    height: 30vh;
   }
 }
 
 @media screen and (min-width: 1600px) and (max-width: 2560px) {
   .sectionNosotros .nosotrosParnaTexto {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 }
 
@@ -563,12 +619,38 @@
 @media screen and (max-width: 320px) {
   .sectionPreguntas .box {
     font-size: 0.8rem;
+    height: 30vh;
+    text-align: center;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 576px) {
   .sectionPreguntas .box {
-    font-size: 0.8rem;
+    font-size: 1rem;
+    height: 30vh;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .sectionPreguntas .box {
+    font-size: 1.2rem;
+    height: 30vh;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  .sectionPreguntas .box {
+    font-size: 1.3rem;
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1440px) {
+  .sectionPreguntas .box {
+    font-size: 1.5rem;
+    height: 30vh;
   }
 }
 
@@ -580,19 +662,37 @@
 
 @media screen and (max-width: 320px) {
   .sectionPreguntas .box__pregunta {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 576px) {
   .sectionPreguntas .box__pregunta {
-    font-size: 1.4rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .sectionPreguntas .box__pregunta {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  .sectionPreguntas .box__pregunta {
+    font-size: 2.2rem;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1440px) {
+  .sectionPreguntas .box__pregunta {
+    font-size: 2.5rem;
   }
 }
 
 @media screen and (min-width: 1600px) and (max-width: 2560px) {
   .sectionPreguntas .box__pregunta {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 }
 
@@ -614,12 +714,37 @@
 }
 
 .sectionContacto .redes {
-  height: 50vh;
+  height: 40vh;
 }
 
-@media screen and (min-width: 1600px) and (max-width: 2560px) {
+@media screen and (max-width: 320px) {
   .sectionContacto .redes {
-    height: 40vh;
+    text-align: center;
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 375px) and (max-width: 576px) {
+  .sectionContacto .redes {
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .sectionContacto .redes {
+    height: 35vh;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  .sectionContacto .redes {
+    height: 35vh;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1440px) {
+  .sectionContacto .redes {
+    height: 35vh;
   }
 }
 
@@ -629,17 +754,23 @@
 
 @media screen and (max-width: 320px) {
   .sectionContacto .redes__logos {
-    width: 100%;
+    width: 110%;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 576px) {
   .sectionContacto .redes__logos {
-    width: 65%;
+    width: 90%;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
+  .sectionContacto .redes__logos {
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
   .sectionContacto .redes__logos {
     width: 45%;
   }
@@ -657,33 +788,40 @@
 @media screen and (max-width: 320px) {
   .sectionContacto .redes__logos i {
     font-size: 4rem;
-    padding: 0.5rem 1.2rem;
+    border-radius: 4rem;
   }
 }
 
 @media screen and (min-width: 375px) and (max-width: 576px) {
   .sectionContacto .redes__logos i {
-    font-size: 4rem;
-    padding: 0.5rem 1.2rem;
+    font-size: 5rem;
+    border-radius: 4rem;
   }
 }
 
 @media screen and (min-width: 600px) and (max-width: 768px) {
   .sectionContacto .redes__logos i {
-    font-size: 4.5rem;
-    padding: 0.5rem 1.5rem;
+    font-size: 6rem;
+    border-radius: 4rem;
   }
 }
 
 @media screen and (min-width: 800px) and (max-width: 1024px) {
   .sectionContacto .redes__logos i {
-    font-size: 5rem;
+    font-size: 6rem;
+    border-radius: 4rem;
+  }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1440px) {
+  .sectionContacto .redes__logos i {
+    border-radius: 4rem;
   }
 }
 
 @media screen and (min-width: 1600px) and (max-width: 2560px) {
   .sectionContacto .redes__logos i {
-    font-size: 10rem;
+    font-size: 8rem;
   }
 }
 
@@ -698,7 +836,7 @@
 
 @media screen and (min-width: 1600px) and (max-width: 2560px) {
   .sectionContacto .formulario {
-    font-size: 3rem;
+    font-size: 1rem;
   }
 }
 
@@ -706,5 +844,18 @@
   .sectionContacto .formulario h2 {
     font-size: 1.4rem;
   }
+}
+
+.sectionContacto .formulario .boton {
+  padding: 0.5rem 1rem;
+  margin: 1rem 0.5rem;
+  border-radius: 2rem;
+}
+
+.sectionContacto .formulario .boton:hover {
+  background-color: black;
+  color: white;
+  -webkit-box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0px 5px 10px 5px rgba(0, 0, 0, 0.3);
 }
 /*# sourceMappingURL=main.css.map */
