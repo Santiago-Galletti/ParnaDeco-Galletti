@@ -47,7 +47,7 @@
             }
             @include mobile{
                 flex-flow: column !important;
-                height: 130vh;
+                height: 150vh;
             }
             @include tablet{
                 flex-flow: column !important;
@@ -57,10 +57,10 @@
                 height: 45vh;
             }
             @include laptop-grande{
-                height: 60vh;
+                height: 68vh;
             }
             @include tv{
-                height: 70vh;
+                height: 75vh;
             }
             &__fotos{
                 height: 350px;
@@ -89,8 +89,8 @@
                     border-radius: 20rem;
                 }
                 @include tv{
-                    height: 500px;
-                    width: 500px;
+                    height: 460px;
+                    width: 460px;
                     border-radius: 20rem;
                 }
             }
